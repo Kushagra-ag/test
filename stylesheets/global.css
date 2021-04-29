@@ -1,0 +1,72 @@
+@font-face {
+  font-family: spacegrotesk;
+  src: url('../public/fonts/SpaceGrotesk-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: spacegrotesk;
+  src: url('../public/fonts/SpaceGrotesk-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: spacegrotesk;
+  src: url('../public/fonts/SpaceGrotesk-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: spacegrotesk;
+  src: url('../public/fonts/SpaceGrotesk-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: clashdisplay;
+  src: url('../public/fonts/ClashDisplay-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: clashdisplay;
+  src: url('../public/fonts/ClashDisplay-Bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: clashdisplay;
+  src: url('../public/fonts/ClashDisplay-Medium.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: clashdisplay;
+  src: url('../public/fonts/ClashDisplay-Light.otf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: clashdisplay;
+  src: url('../public/fonts/ClashDisplay-Extralight.otf');
+  font-weight: 200;
+}
+
+:root {
+  --dark: #1f2227;
+}
+
+body {
+	background-color: #F4F4F4;
+	font-family: spacegrotesk!important;
+	font-weight: normal;
+	line-height: 1.7;
+}
+
+.heading {
+	font-family: clashdisplay;
+}
+
+.btn {
+	font-family: clashdisplay;
+	letter-spacing: 1.3px;
+	padding: .65rem 1.2rem;
+	border-radius: 10px;
+}
+
+.font--medium {
+	font-weight: 500;
+}

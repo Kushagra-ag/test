@@ -1,0 +1,25 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettify": "prettier --write pages/**/*.js components/**/*.js layouts/**/*.js"
+  },
+  "dependencies": {
+    "next": "^10.0.0",
+    "prop-types": "^15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "parser": "babel",
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "trailingComma": "none",
+    "endOfLine": "crlf"
+  }
+}
