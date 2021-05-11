@@ -67,14 +67,15 @@ export default function Home() {
                                         light
                                     />
                                     <div className="font-weight-light text-white py-5">
-                                        We'll be incentivising people for holding
-                                        NFTs. You'll be earning interests and
-                                        utility for holding NFTs. Goal is to create
-                                        a NFT circular economy, and we'll be the
-                                        first team to ever do that to NFTs. <br />
+                                        We'll be incentivising people for
+                                        holding NFTs. You'll be earning
+                                        interests and utility for holding NFTs.
+                                        Goal is to create a NFT circular
+                                        economy, and we'll be the first team to
+                                        ever do that to NFTs. <br />
                                         It's a first NFT series built on Bonding
-                                        curve on zilliqa Blockchain and First NFT
-                                        series to be gamified.
+                                        curve on zilliqa Blockchain and First
+                                        NFT series to be gamified.
                                     </div>
                                 </div>
                             </div>

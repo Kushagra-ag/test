@@ -1,11 +1,15 @@
 import OutlineButton from './buttons/Outline';
 
 export default function Header() {
+    const loggedIn = false;
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-light px-5 mb-5">
-            <a className="navbar-brand font-weight-bold" href="#">
-                DeMons
-            </a>
+        <nav className="navbar navbar-expand-lg navbar-light justify-content-between flex-nowrap px-5 mb-5">
+            <div className="text-lg-center nav-logo">
+                <a className="navbar-brand font-weight-bold" href="#">
+                    DeMons
+                </a>
+            </div>
             <button
                 className="navbar-toggler"
                 type="button"
@@ -22,7 +26,7 @@ export default function Header() {
                 className="collapse navbar-collapse align-items-center"
                 id="navbarSupportedContent"
             >
-                <ul className="navbar-nav mx-auto">
+                <ul className="navbar-nav">
                     <li className="nav-item mx-2">
                         <a className="nav-link" href="#">
                             Overview <span className="sr-only">(current)</span>
@@ -54,14 +58,73 @@ export default function Header() {
 		          <a className="dropdown-item" href="#">Something else here</a>
 		        </div>
 		      </li>*/}
+                    <li className="d-lg-none">
+                        {loggedIn ? (
+                            <div className="act-details card-shadow d-flex justify-content-end align-items-center py-1">
+                                <div className="mr-2">
+                                    <div className="act-bal text-right">
+                                        200 DMZ
+                                    </div>
+                                    <div className="act-address overflow-hidden">
+                                        dsjhvbjhbhjbhjbfdvbfe
+                                    </div>
+                                </div>
+                                <div className="act-img m-1 mr-2"></div>
+                            </div>
+                        ) : (
+                            <OutlineButton content="My wallet" />
+                        )}
+                    </li>
                 </ul>
-                <OutlineButton content="My wallet" />
+            </div>
+            <div
+                className="d-none d-lg-block text-right"
+                style={{ width: '220px' }}
+            >
+                {loggedIn ? (
+                    <div className="act-details card-shadow d-flex justify-content-end align-items-center py-1 my-1">
+                        <div className="mr-2">
+                            <div className="act-bal text-right">200 DMZ</div>
+                            <div className="act-address overflow-hidden">
+                                dsjhvbjhbhjbhjbfdvbfe
+                            </div>
+                        </div>
+                        <div className="act-img m-1 mr-2"></div>
+                    </div>
+                ) : (
+                    <OutlineButton content="My wallet" />
+                )}
             </div>
 
             <style jsx>{`
                 .navbar {
                     background-color: #fff;
                     box-shadow: 0 4px 50px #0000000a;
+                }
+                .navbar-collapse {
+                    flex-grow: unset;
+                }
+                .act-details {
+                    font-size: 75%;
+                    width: 220px;
+                    border-radius: 50px;
+                }
+                .act-bal {
+                    font-weight: 500;
+                }
+                .act-img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 2px solid black;
+                }
+                .act-address {
+                    max-width: 140px;
+                }
+                @media (min-width: 992px) {
+                    .nav-logo {
+                        width: 220px;
+                    }
                 }
             `}</style>
         </nav>

@@ -1,12 +1,15 @@
 {
-  "name": "learn-starter",
+  "homepage": "https://Kushagra-ag.github.io/demons",
+  "name": "demons",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prettify": "prettier --write pages/**/*.js components/**/*.js layouts/**/*.js"
+    "prettify": "prettier --write pages/**/*.js components/**/*.js layouts/**/*.js",
+    "predeploy":"next build",
+    "deploy":"gh-pages -d build"
   },
   "dependencies": {
     "next": "^10.0.0",
@@ -21,5 +24,8 @@
     "arrowParens": "avoid",
     "trailingComma": "none",
     "endOfLine": "crlf"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

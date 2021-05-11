@@ -1,23 +1,28 @@
-import Link from "next/link";
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-export default function Tab({ href, isSelected, title, bubble=0 }) {
+export default function Tab({ href, isSelected, title, bubble = 0 }) {
     return (
-    <>
-    <Link href={href}>
-      <a
-      	className="tab-link"
-        style={{
-          color: isSelected ? "#000" : "#00000099",
-          borderBottomColor: isSelected ? "var(--dark)" : "#f2f2f2",
-        }}
-      >
-        {title}
-        {!!bubble && <span className="tab-bbl d-inline-flex justify-content-center align-items-center">{bubble}</span>}
-      </a>
-      
-    </Link>
-    <style jsx>{`
+        <>
+            <Link href={href}>
+                <a
+                    className="tab-link"
+                    style={{
+                        color: isSelected ? '#000' : '#00000099',
+                        borderBottomColor: isSelected
+                            ? 'var(--dark)'
+                            : '#f2f2f2'
+                    }}
+                >
+                    {title}
+                    {!!bubble && (
+                        <span className="tab-bbl d-inline-flex justify-content-center align-items-center">
+                            {bubble}
+                        </span>
+                    )}
+                </a>
+            </Link>
+            <style jsx>{`
                 .tab-bbl {
                     background-color: var(--dark);
                     color: #fff;
@@ -29,21 +34,21 @@ export default function Tab({ href, isSelected, title, bubble=0 }) {
                     vertical-align: middle;
                 }
                 .tab-link {
-                	padding: 0 15px 15px;
-		          margin: 0;
-		          font-weight: 500;
-		          text-decoration:none;
-		          border-bottom-style: solid;
-		          border-bottom-width: 3;
+                    padding: 0 25px 15px;
+                    margin: 0;
+                    
+                    text-decoration: none;
+                    border-bottom-style: solid;
+                    border-bottom-width: 3px;
                 }
             `}</style>
-    </>
-   )
+        </>
+    );
 }
 
 Tab.propTypes = {
-	href: PropTypes.string.isRequired,
-	isSelected: PropTypes.bool.isRequired,
-	title: PropTypes.string.isRequired,
-	bubble: PropTypes.number
-}
+    href: PropTypes.string.isRequired,
+    isSelected: PropTypes.bool.isRequired,
+    title: PropTypes.string.isRequired,
+    bubble: PropTypes.number
+};

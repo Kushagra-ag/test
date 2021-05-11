@@ -6,33 +6,28 @@
 @font-face {
   font-family: spacegrotesk;
   src: url('../public/fonts/SpaceGrotesk-Regular.ttf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: spacegrotesk;
-  src: url('../public/fonts/SpaceGrotesk-Bold.ttf');
-  font-weight: bold;
+  font-weight: 400;
 }
 @font-face {
   font-family: spacegrotesk;
   src: url('../public/fonts/SpaceGrotesk-Medium.ttf');
   font-weight: 500;
 }
+@font-face {
+  font-family: spacegrotesk;
+  src: url('../public/fonts/SpaceGrotesk-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: spacegrotesk;
+  src: url('../public/fonts/SpaceGrotesk-Bold.ttf');
+  font-weight: 700;
+}
 
 @font-face {
   font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Regular.otf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Bold.otf');
-  font-weight: bold;
-}
-@font-face {
-  font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Medium.otf');
-  font-weight: 500;
+  src: url('../public/fonts/ClashDisplay-Extralight.otf');
+  font-weight: 200;
 }
 @font-face {
   font-family: clashdisplay;
@@ -41,9 +36,26 @@
 }
 @font-face {
   font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Extralight.otf');
-  font-weight: 200;
+  src: url('../public/fonts/ClashDisplay-Regular.otf');
+  font-weight: 400;
 }
+@font-face {
+  font-family: clashdisplay;
+  src: url('../public/fonts/ClashDisplay-Medium.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: clashdisplay;
+  src: url('../public/fonts/ClashDisplay-Semibold.otf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: clashdisplay;
+  src: url('../public/fonts/ClashDisplay-Bold.otf');
+  font-weight: 700;
+}
+
+
 
 :root {
   --dark: #1f2227;
@@ -52,8 +64,9 @@
 
 body {
 	background-color: #FFF;
+  color: #000;
 	font-family: spacegrotesk!important;
-	font-weight: normal;
+	font-weight: 400;
 	line-height: 1.7;
 }
 
@@ -72,6 +85,18 @@ select.custom-select {
 	font-family: clashdisplay;
 }
 
+.text-black-high {
+  opacity: 87%;
+}
+
+.text-black-medium {
+  opacity: 60%;
+}
+
+.text-black-disabled {
+  opacity: 38%;
+}
+
 .btn {
 	font-family: clashdisplay;
 	letter-spacing: 1.3px;
@@ -79,6 +104,6 @@ select.custom-select {
 	border-radius: 10px;
 }
 
-.font--medium {
-	font-weight: 500;
+.card-shadow {
+  box-shadow: 0 4px 30px #0000001a;
 }

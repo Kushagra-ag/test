@@ -1,11 +1,13 @@
-export default function OutlineButton(props) {
+import PropTypes from 'prop-types';
+
+export default function OutlineButton({content, className=''}) {
     return (
         <>
             <button
                 type="button"
-                className="btn btn-outline-dark btn--outline-dark my-2 mx-2"
+                className={`btn btn-outline-dark btn--outline-dark my-2 mx-2 ${className}`}
             >
-                {props.content}
+                {content}
             </button>
             <style jsx>{`
                 .btn--outline-dark {
@@ -20,3 +22,8 @@ export default function OutlineButton(props) {
         </>
     );
 }
+
+OutlineButton.propTypes = {
+    content: PropTypes.string.isRequired,
+    className: PropTypes.string
+};

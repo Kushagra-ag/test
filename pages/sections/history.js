@@ -1,0 +1,47 @@
+import PropTypes from 'prop-types';
+import Image from 'next/image';
+
+export default function History() {
+
+	return(
+		<>
+			<div className="row">
+				<div className="col-12">
+					<div className="card-shadow d-flex align-items-center p-3" style={{borderRadius: '15px'}}>
+						<div className="overflow-hidden rounded-circle position-relative user-img mr-3">
+							<Image
+	                                    src="/images/user.jpg" 
+	                                    layout="fill"
+        								objectFit="cover"
+	                                    alt="User image"
+	                                />
+						</div>
+						<div>
+							<div className="text-medium-high">
+								Bid by <b>@samfowl</b>
+							</div>
+							<div className="text-black-medium">
+								April 20, 2021
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style jsx>{`
+                .user-img {
+                    height: 50px;
+                    width: 50px;
+                    cursor: pointer;
+                }
+                .tab-link {
+                    padding: 0 15px 15px;
+                    margin: 0;
+                    font-weight: 500;
+                    text-decoration: none;
+                    border-bottom-style: solid;
+                    border-bottom-width: 3;
+                }
+            `}</style>
+		</>
+	)
+}
