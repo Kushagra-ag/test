@@ -11,7 +11,7 @@ import Story from './sections/story';
 import History from './sections/history';
 import Details from './sections/details';
 
-export default function Card() {
+export default function Owned() {
 	const { query, pathname } = useRouter();
 
 	const len = Object.keys(query).length;
@@ -30,7 +30,7 @@ export default function Card() {
 		<DefaultLayout>
 			<div className="container">
                 <Head>
-                    <title>Card Details</title>
+                    <title>My NFTs</title>
                 </Head>
                 <div className="row">
                     <div className="col-md-6 flex-fill text-center">
@@ -86,19 +86,15 @@ export default function Card() {
                                 />
                             </div>
                         </div>
-                        <div className="d-flex justify-content-around align-items-center my-5">
-                        	<div>
-                        		Listed on Marketplace
-                        	</div>
-                        	<div>
-                        		<OutlineButton content="Bid there" />
-                        	</div>
-                        </div>
-                    </div>
+                                            </div>
                     <div className="col-md-6 flex-fill text-center text-md-left mt-4 mt-md-0">
                     	<GradientButton content="Legendary" className="mb-4" />
-                    	<SectionHeading content="Mecha Dragonzilla" className="mb-5" />
+                    	<SectionHeading content="Mecha Dragonzilla" className="mb-4" />
                     	<div>
+                    		<OutlineButton content="Rename" icon="edit" className="ml-n2" />
+                    		<OutlineButton content="Sell Demon" />
+                    	</div>
+                    	<div className="mt-5">
 	                    	<Tabs
 		                        href={`${pathname}?story=1`}
 		                        title="Story"

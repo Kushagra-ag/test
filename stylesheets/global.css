@@ -68,6 +68,8 @@ body {
 	font-family: spacegrotesk!important;
 	font-weight: 400;
 	line-height: 1.7;
+  margin-bottom: 2em;
+  overscroll-behavior-x: none;
 }
 
 select.custom-select {
@@ -104,6 +106,20 @@ select.custom-select {
 	border-radius: 10px;
 }
 
+.btn--outline-dark:hover .btn-icon {
+  filter: invert(1);
+}
+
 .card-shadow {
   box-shadow: 0 4px 30px #0000001a;
+}
+
+.user-img-thumb {
+  height: 50px;
+                    width: 50px;
+                    cursor: pointer;
+}
+
+.f-85 {
+  font-size: 85%;
 }

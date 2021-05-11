@@ -8,7 +8,7 @@ export default function History() {
 			<div className="row">
 				<div className="col-12">
 					<div className="card-shadow d-flex align-items-center p-3" style={{borderRadius: '15px'}}>
-						<div className="overflow-hidden rounded-circle position-relative user-img mr-3">
+						<div className="overflow-hidden rounded-circle position-relative user-img-thumb mr-3">
 							<Image
 	                                    src="/images/user.jpg" 
 	                                    layout="fill"
@@ -27,21 +27,6 @@ export default function History() {
 					</div>
 				</div>
 			</div>
-			<style jsx>{`
-                .user-img {
-                    height: 50px;
-                    width: 50px;
-                    cursor: pointer;
-                }
-                .tab-link {
-                    padding: 0 15px 15px;
-                    margin: 0;
-                    font-weight: 500;
-                    text-decoration: none;
-                    border-bottom-style: solid;
-                    border-bottom-width: 3;
-                }
-            `}</style>
 		</>
 	)
 }

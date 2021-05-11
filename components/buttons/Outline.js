@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 
-export default function OutlineButton({content, className=''}) {
+export default function OutlineButton({content, icon=null, className=''}) {
     return (
         <>
             <button
                 type="button"
                 className={`btn btn-outline-dark btn--outline-dark my-2 mx-2 ${className}`}
             >
+                {icon && <span className="btn-icon mr-2"><img src={`/svg/icons/${icon}.svg`} height="15" alt={icon} /></span>}
                 {content}
             </button>
             <style jsx>{`
@@ -25,5 +26,6 @@ export default function OutlineButton({content, className=''}) {
 
 OutlineButton.propTypes = {
     content: PropTypes.string.isRequired,
-    className: PropTypes.string
+    icon: PropTypes.string,
+    className: PropTypes.string,
 };
