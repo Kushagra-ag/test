@@ -8,10 +8,20 @@ import OutlineButton from '../components/buttons/Outline';
 
 export default function Gallery() {
     const [showFilter, setShowFilter] = useState(false);
+    const [order, setOrder] = useState('chronological');
+    const [filters, setFilters] = useState({
+        priceRange: 1,
+        family: 1,
+        rarity: 1
+    })
 
     const toggleFilter = () => {
         setShowFilter(!showFilter);
     };
+
+    const orderChange = e => {
+        setOrder(e.target.value);
+    }
 
     return (
         <DefaultLayout>
@@ -29,8 +39,8 @@ export default function Gallery() {
                 <div className="row my-5">
                     <div className="col-12 d-flex justify-content-between">
                         <div>
-                            <select className="custom-select">
-                                <option selected>Chronological</option>
+                            <select value={order} className="custom-select" onChange={e => orderChange(e)}>
+                                <option value="chronological">Chronological</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -60,53 +70,73 @@ export default function Gallery() {
                     </div>
                 </div>
                 <div className="row mw-100 overflow-hidden">
-                    <div className="col-12 d-flex justify-content-between flex-column flex-sm-row">
+                    <div className="col-12 d-flex justify-content-between flex-column flex-md-row">
                         <div
                             className={`glry-filter ${
                                 showFilter ? '' : 'close-filters'
-                            } order-0 order-md-2 overflow-hidden`}
+                            } order-0 order-md-2 overflow-hidden text-center text-md-left pl-md-3`}
                         >
-                            glry fiters
-                            <div>
-                                {/*<input type="range" min="10" max="100" className="glry-price-range position-absolute"/>*/}
-                                <input
-                                    type="range"
-                                    min="10"
-                                    max="100"
-                                    className="glry-price-range"
-                                />
+                            <div className="mb-4">
+                                <span className="f-85 text-black-medium">Price range</span>
+                                <div className="mt-2">
+                                    {/*<input type="range" min="10" max="100" className="glry-price-range position-absolute"/>*/}
+                                    <input
+                                        type="range"
+                                        min="10"
+                                        max="100"
+                                        className="glry-price-range"
+                                    />
+                                </div>
+                            </div>
+                            <div className="mb-4">
+                                <span className="f-85 text-black-medium">Family</span>
+                                <select value={filters.family} className="d-block w-75 w-md-100 custom-select mt-2 mx-auto mx-md-0" onChange={e => orderChange(e)}>
+                                    <option value="1">Kawaii</option>
+                                    <option value="11">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div className="mb-4">
+                                <span className="f-85 text-black-medium">Rarity</span>
+                                <select value={filters.rarity} className="d-block w-75 w-md-100 custom-select mt-2 mx-auto mx-md-0" onChange={e => orderChange(e)}>
+                                    <option value="1">Legendary</option>
+                                    <option value="11">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                         </div>
-                        <div className="glry d-flex flex-row justify-content-start justify-content-sm-center align-items-center flex-wrap order-1">
+                        <div className="glry d-flex flex-row justify-content-md-start justify-content-center align-items-center flex-wrap order-1 mt-4 mt-md-0">
                             <div className="glry-card">
                                 <Image
-                                    src="/images/image1_home_demons.png" // Route of the image file
-                                    height={336} // Desired size with correct aspect ratio
-                                    width={250} // Desired size with correct aspect ratio
+                                    src="/images/image1_home_demons.png"
+                                    height={336}
+                                    width={250}
                                     alt="Your Name"
                                 />
                             </div>
                             <div className="glry-card">
                                 <Image
-                                    src="/images/image1_home_demons.png" // Route of the image file
-                                    height={336} // Desired size with correct aspect ratio
-                                    width={250} // Desired size with correct aspect ratio
+                                    src="/images/image1_home_demons.png"
+                                    height={336}
+                                    width={250}
                                     alt="Your Name"
                                 />
                             </div>
                             <div className="glry-card">
                                 <Image
-                                    src="/images/image1_home_demons.png" // Route of the image file
-                                    height={336} // Desired size with correct aspect ratio
-                                    width={250} // Desired size with correct aspect ratio
+                                    src="/images/image1_home_demons.png"
+                                    height={336}
+                                    width={250}
                                     alt="Your Name"
                                 />
                             </div>
                             <div className="glry-card">
                                 <Image
-                                    src="/images/image1_home_demons.png" // Route of the image file
-                                    height={336} // Desired size with correct aspect ratio
-                                    width={250} // Desired size with correct aspect ratio
+                                    src="/images/image1_home_demons.png"
+                                    height={336}
+                                    width={250}
                                     alt="Your Name"
                                 />
                             </div>
@@ -115,12 +145,16 @@ export default function Gallery() {
                 </div>
             </div>
             <style jsx>{`
+                .glry {
+                    transition: all 1s;
+                }
                 .glry-card {
                     padding: 0 20px 20px 0;
                 }
                 .glry-filter {
-                    transition: margin 1s;
+                    transition: all 1s;
                     min-width: 25%;
+                    height: 100%;
                 }
                 input[type='range'] {
                     -webkit-appearance: none;
@@ -163,9 +197,13 @@ export default function Gallery() {
                     background-color: var(--dark);
                     border-color: transparent;
                 }
-                @media (max-width: 575px) {
+                @media (max-width: 767px) {
                     .close-filters {
-                        margin-top: -30%;
+                        margin-right: unset;
+                        height: 0;
+                    }
+                    .glry-card {
+                        padding: 20px 0;
                     }
                 }
             `}</style>

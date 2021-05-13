@@ -7,9 +7,9 @@ import SectionHeading from '../components/SectionHeading';
 import GradientButton from '../components/buttons/Gradient';
 import OutlineButton from '../components/buttons/Outline';
 import Tabs from '../components/Tabs';
-import Story from './sections/story';
-import History from './sections/history';
-import Details from './sections/details';
+import Story from './../components/sections/story';
+import History from './../components/sections/history';
+import Details from './../components/sections/details';
 
 export default function Card() {
 	const { query, pathname } = useRouter();

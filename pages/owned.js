@@ -7,9 +7,9 @@ import SectionHeading from '../components/SectionHeading';
 import GradientButton from '../components/buttons/Gradient';
 import OutlineButton from '../components/buttons/Outline';
 import Tabs from '../components/Tabs';
-import Story from './sections/story';
-import History from './sections/history';
-import Details from './sections/details';
+import Story from './../components/sections/story';
+import History from './../components/sections/history';
+import Details from './../components/sections/details';
 
 export default function Owned() {
 	const { query, pathname } = useRouter();
@@ -136,14 +136,6 @@ export default function Owned() {
                     width: 40px;
                     border-radius: 10px;
                     cursor: pointer;
-                }
-                .tab-link {
-                    padding: 0 15px 15px;
-                    margin: 0;
-                    font-weight: 500;
-                    text-decoration: none;
-                    border-bottom-style: solid;
-                    border-bottom-width: 3;
                 }
             `}</style>
 		</DefaultLayout>

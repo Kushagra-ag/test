@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import OutlineButton from './buttons/Outline';
 
 export default function Header() {
@@ -28,24 +29,32 @@ export default function Header() {
             >
                 <ul className="navbar-nav">
                     <li className="nav-item mx-2">
-                        <a className="nav-link" href="#">
+                        <Link href="#">
+                        <a className="nav-link">
                             Overview <span className="sr-only">(current)</span>
                         </a>
+                        </Link>
                     </li>
                     <li className="nav-item mx-2">
-                        <a className="nav-link" href="#">
+                        <Link href="/gallery">
+                        <a className="nav-link">
                             Gallery
                         </a>
+                        </Link>
                     </li>
                     <li className="nav-item mx-2">
-                        <a className="nav-link" href="#">
+                        <Link href="#">
+                        <a className="nav-link">
                             DMZ Token
                         </a>
+                        </Link>
                     </li>
                     <li className="nav-item mx-2">
-                        <a className="nav-link" href="#">
+                        <Link href="#">
+                        <a className="nav-link">
                             Voting Portal
                         </a>
+                        </Link>
                     </li>
                     {/* <li className="nav-item dropdown">
 		        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

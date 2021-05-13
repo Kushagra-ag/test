@@ -64,7 +64,7 @@
 
 body {
 	background-color: #FFF;
-  color: #000;
+  color: #000000de;
 	font-family: spacegrotesk!important;
 	font-weight: 400;
 	line-height: 1.7;
@@ -88,15 +88,15 @@ select.custom-select {
 }
 
 .text-black-high {
-  opacity: 87%;
+  color: #000000de;
 }
 
 .text-black-medium {
-  opacity: 60%;
+  color: #00000099;
 }
 
 .text-black-disabled {
-  opacity: 38%;
+  color: #00000061;
 }
 
 .btn {
@@ -106,7 +106,7 @@ select.custom-select {
 	border-radius: 10px;
 }
 
-.btn--outline-dark:hover .btn-icon {
+.btn--outline-dark:hover .btn-icon, .method-box--active img {
   filter: invert(1);
 }
 
