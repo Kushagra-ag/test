@@ -1,57 +1,57 @@
 @font-face {
   font-family: spacegrotesk;
-  src: url('../public/fonts/SpaceGrotesk-Light.ttf');
+  src: url('/fonts/SpaceGrotesk-Light.ttf');
   font-weight: 300;
 }
 @font-face {
   font-family: spacegrotesk;
-  src: url('../public/fonts/SpaceGrotesk-Regular.ttf');
+  src: url('/fonts/SpaceGrotesk-Regular.ttf');
   font-weight: 400;
 }
 @font-face {
   font-family: spacegrotesk;
-  src: url('../public/fonts/SpaceGrotesk-Medium.ttf');
+  src: url('/fonts/SpaceGrotesk-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
   font-family: spacegrotesk;
-  src: url('../public/fonts/SpaceGrotesk-SemiBold.ttf');
+  src: url('/fonts/SpaceGrotesk-SemiBold.ttf');
   font-weight: 600;
 }
 @font-face {
   font-family: spacegrotesk;
-  src: url('../public/fonts/SpaceGrotesk-Bold.ttf');
+  src: url('/fonts/SpaceGrotesk-Bold.ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Extralight.otf');
+  src: url('/fonts/ClashDisplay-Extralight.otf');
   font-weight: 200;
 }
 @font-face {
   font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Light.otf');
+  src: url('/fonts/ClashDisplay-Light.otf');
   font-weight: 300;
 }
 @font-face {
   font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Regular.otf');
+  src: url('/fonts/ClashDisplay-Regular.otf');
   font-weight: 400;
 }
 @font-face {
   font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Medium.otf');
+  src: url('/fonts/ClashDisplay-Medium.otf');
   font-weight: 500;
 }
 @font-face {
   font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Semibold.otf');
+  src: url('/fonts/ClashDisplay-Semibold.otf');
   font-weight: 600;
 }
 @font-face {
   font-family: clashdisplay;
-  src: url('../public/fonts/ClashDisplay-Bold.otf');
+  src: url('/fonts/ClashDisplay-Bold.otf');
   font-weight: 700;
 }
 

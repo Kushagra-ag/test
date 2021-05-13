@@ -5,7 +5,7 @@ export default function Header() {
     const loggedIn = false;
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light justify-content-between flex-nowrap px-5 mb-5">
+        <nav className="navbar navbar-expand-lg navbar-light justify-content-between px-md-5 mb-5">
             <div className="text-lg-center nav-logo">
                 <a className="navbar-brand font-weight-bold" href="#">
                     DeMons
