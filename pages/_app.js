@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import '../stylesheets/global.css';
+import 'lightbox-react/style.css';
 
 export default function App({ Component, pageProps }) {
     return (

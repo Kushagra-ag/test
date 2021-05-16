@@ -30,30 +30,25 @@ export default function Header() {
                 <ul className="navbar-nav">
                     <li className="nav-item mx-2">
                         <Link href="#">
-                        <a className="nav-link">
-                            Overview <span className="sr-only">(current)</span>
-                        </a>
+                            <a className="nav-link">
+                                Overview{' '}
+                                <span className="sr-only">(current)</span>
+                            </a>
                         </Link>
                     </li>
                     <li className="nav-item mx-2">
                         <Link href="/gallery">
-                        <a className="nav-link">
-                            Gallery
-                        </a>
+                            <a className="nav-link">Gallery</a>
                         </Link>
                     </li>
                     <li className="nav-item mx-2">
                         <Link href="#">
-                        <a className="nav-link">
-                            DMZ Token
-                        </a>
+                            <a className="nav-link">DMZ Token</a>
                         </Link>
                     </li>
                     <li className="nav-item mx-2">
                         <Link href="#">
-                        <a className="nav-link">
-                            Voting Portal
-                        </a>
+                            <a className="nav-link">Voting Portal</a>
                         </Link>
                     </li>
                     {/* <li className="nav-item dropdown">

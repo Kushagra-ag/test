@@ -4,7 +4,7 @@ export default function SectionHeading({
     subHeadAbove = '',
     content = '',
     light = false,
-    className=''
+    className = ''
 }) {
     return (
         <>

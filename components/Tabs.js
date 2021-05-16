@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-export default function Tab({ href, isSelected, title, bubble = 0 }) {
+export default function Tab({ changeTab, isSelected, title, bubble = 0 }) {
     return (
         <>
-            <Link href={href}>
+            <div onClick={changeTab}>
                 <a
                     className="tab-link"
                     style={{
@@ -21,7 +21,7 @@ export default function Tab({ href, isSelected, title, bubble = 0 }) {
                         </span>
                     )}
                 </a>
-            </Link>
+            </div>
             <style jsx>{`
                 .tab-bbl {
                     background-color: var(--dark);
@@ -36,7 +36,7 @@ export default function Tab({ href, isSelected, title, bubble = 0 }) {
                 .tab-link {
                     padding: 0 25px 15px;
                     margin: 0;
-                    
+                    cursor: pointer;
                     text-decoration: none;
                     border-bottom-style: solid;
                     border-bottom-width: 3px;
@@ -47,7 +47,7 @@ export default function Tab({ href, isSelected, title, bubble = 0 }) {
 }
 
 Tab.propTypes = {
-    href: PropTypes.string.isRequired,
+    changeTab: PropTypes.func.isRequired,
     isSelected: PropTypes.bool.isRequired,
     title: PropTypes.string.isRequired,
     bubble: PropTypes.number

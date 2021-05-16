@@ -13,7 +13,7 @@ export default function Gallery() {
         priceRange: 1,
         family: 1,
         rarity: 1
-    })
+    });
 
     const toggleFilter = () => {
         setShowFilter(!showFilter);
@@ -21,7 +21,7 @@ export default function Gallery() {
 
     const orderChange = e => {
         setOrder(e.target.value);
-    }
+    };
 
     return (
         <DefaultLayout>
@@ -39,8 +39,14 @@ export default function Gallery() {
                 <div className="row my-5">
                     <div className="col-12 d-flex justify-content-between">
                         <div>
-                            <select value={order} className="custom-select" onChange={e => orderChange(e)}>
-                                <option value="chronological">Chronological</option>
+                            <select
+                                value={order}
+                                className="custom-select"
+                                onChange={e => orderChange(e)}
+                            >
+                                <option value="chronological">
+                                    Chronological
+                                </option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -77,7 +83,9 @@ export default function Gallery() {
                             } order-0 order-md-2 overflow-hidden text-center text-md-left pl-md-3`}
                         >
                             <div className="mb-4">
-                                <span className="f-85 text-black-medium">Price range</span>
+                                <span className="f-85 text-black-medium">
+                                    Price range
+                                </span>
                                 <div className="mt-2">
                                     {/*<input type="range" min="10" max="100" className="glry-price-range position-absolute"/>*/}
                                     <input
@@ -89,8 +97,14 @@ export default function Gallery() {
                                 </div>
                             </div>
                             <div className="mb-4">
-                                <span className="f-85 text-black-medium">Family</span>
-                                <select value={filters.family} className="d-block w-75 w-md-100 custom-select mt-2 mx-auto mx-md-0" onChange={e => orderChange(e)}>
+                                <span className="f-85 text-black-medium">
+                                    Family
+                                </span>
+                                <select
+                                    value={filters.family}
+                                    className="d-block w-75 w-md-100 custom-select mt-2 mx-auto mx-md-0"
+                                    onChange={e => orderChange(e)}
+                                >
                                     <option value="1">Kawaii</option>
                                     <option value="11">One</option>
                                     <option value="2">Two</option>
@@ -98,8 +112,14 @@ export default function Gallery() {
                                 </select>
                             </div>
                             <div className="mb-4">
-                                <span className="f-85 text-black-medium">Rarity</span>
-                                <select value={filters.rarity} className="d-block w-75 w-md-100 custom-select mt-2 mx-auto mx-md-0" onChange={e => orderChange(e)}>
+                                <span className="f-85 text-black-medium">
+                                    Rarity
+                                </span>
+                                <select
+                                    value={filters.rarity}
+                                    className="d-block w-75 w-md-100 custom-select mt-2 mx-auto mx-md-0"
+                                    onChange={e => orderChange(e)}
+                                >
                                     <option value="1">Legendary</option>
                                     <option value="11">One</option>
                                     <option value="2">Two</option>
@@ -164,10 +184,17 @@ export default function Gallery() {
                 }
                 input[type='range']::-webkit-slider-runnable-track {
                     width: 100%;
-                    background: #fff
+                    /*background: #fff
                         url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjE0IiB2aWV3Qm94PSIwIDAgMjU2IDE0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDApIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDcuMDAwMTZDMCA2LjI5MjY4IDAuNTY1MDk5IDUuNzE0NzYgMS4yNzI0IDUuNjk4OTFMMjQ4LjUwMiAwLjE1NzAyOUMyNTIuMzQxIDAuMDcwOTY1NyAyNTUuNSAzLjE1OTggMjU1LjUgNy4wMDAxNlY3LjAwMDE2VjcuMDAwMTZDMjU1LjUgMTAuODQwNSAyNTIuMzQxIDEzLjkyOTMgMjQ4LjUwMiAxMy44NDMzTDEuMjcyNCA4LjMwMTQxQzAuNTY1MDk5IDguMjg1NTUgMCA3LjcwNzYzIDAgNy4wMDAxNlY3LjAwMDE2VjcuMDAwMTZaIiBmaWxsPSJibGFjayIvPgo8L2c+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMSkiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNy4wMDAxNkMwIDYuMjkyNjggMC41NjUwOTkgNS43MTQ3NiAxLjI3MjQgNS42OTg5MUwyNDguNTAyIDAuMTU3MDI5QzI1Mi4zNDEgMC4wNzA5NjU3IDI1NS41IDMuMTU5OCAyNTUuNSA3LjAwMDE2QzI1NS41IDEwLjg0MDUgMjUyLjM0MSAxMy45MjkzIDI0OC41MDIgMTMuODQzM0wxLjI3MjQgOC4zMDE0MUMwLjU2NTA5OSA4LjI4NTU1IDAgNy43MDc2MyAwIDcuMDAwMTZaIiBmaWxsPSJibGFjayIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwIj4KPHJlY3Qgd2lkdGg9IjExOSIgaGVpZ2h0PSIxNCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjbGlwMSI+CjxyZWN0IHdpZHRoPSIxMzciIGhlaWdodD0iMTQiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTkpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==')
-                        no-repeat center;
+                        no-repeat center;*/
                     background-size: contain;
+
+                    background-color: #000;
+                    mask-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjE0IiB2aWV3Qm94PSIwIDAgMjU2IDE0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMCA2Ljg0NDg4QzAgNi4xMzc0MSAwLjU2NTA5OSA1LjU1OTQ5IDEuMjcyNCA1LjU0MzYzTDI0OC41MDIgMC4wMDE3NTU4QzI1Mi4zNDEgLTAuMDg0MzA3NyAyNTUuNSAzLjAwNDUzIDI1NS41IDYuODQ0ODhDMjU1LjUgMTAuNjg1MiAyNTIuMzQxIDEzLjc3NDEgMjQ4LjUwMiAxMy42ODhMMS4yNzI0IDguMTQ2MTNDMC41NjUwOTkgOC4xMzAyOCAwIDcuNTUyMzYgMCA2Ljg0NDg4WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTAgNi44NDQ4OEMwIDYuMTM3NDEgMC41NjUwOTkgNS41NTk0OSAxLjI3MjQgNS41NDM2M0wyNDguNTAyIDAuMDAxNzU1OEMyNTIuMzQxIC0wLjA4NDMwNzcgMjU1LjUgMy4wMDQ1MyAyNTUuNSA2Ljg0NDg4QzI1NS41IDEwLjY4NTIgMjUyLjM0MSAxMy43NzQxIDI0OC41MDIgMTMuNjg4TDEuMjcyNCA4LjE0NjEzQzAuNTY1MDk5IDguMTMwMjggMCA3LjU1MjM2IDAgNi44NDQ4OFoiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=');
+                    -webkit-mask-size: contain;
+                    mask-repeat: no-repeat;
+                    mask-position: center;
+
                     /*border-style: solid;
                     	border-color: orange;
                     	border-width: 5px 5px 5px 1px;
@@ -179,7 +206,7 @@ export default function Gallery() {
                     background-color: #000;
                     height: 20px;
                     width: 20px;
-                    border: 3px solid #fff;
+                    border: 3px solid #f0f;
                     border-radius: 50%;
                 }
                 .close-filters {

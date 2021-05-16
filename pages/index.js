@@ -22,8 +22,14 @@ export default function Home() {
                             spawned from the Zilliqa blockchain.
                         </div>
                         <div className="my-5">
-                            <DarkButton content="View Gallery" />
-                            <OutlineButton content="Know more" />
+                            <DarkButton
+                                content="View Gallery"
+                                className="mr-2"
+                            />
+                            <OutlineButton
+                                content="Know more"
+                                className="ml-2"
+                            />
                         </div>
                     </div>
                 </div>
@@ -86,65 +92,56 @@ export default function Home() {
                 <div className="row mt-5">
                     <div className="col-md-6"></div>
                 </div>
-
-                
-
-                
-
-                
-
-                
             </div>
             <style jsx>{`
+                .side-cards {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .gradient-angle {
+                    margin: -15vw 0 0 -50vw;
+                    width: 100vw;
+                    background-image: linear-gradient(
+                        178deg,
+                        transparent,
+                        transparent 5vw,
+                        #1f2227 calc(5vw + 1px),
+                        #1f2227
+                    );
+                    left: 50%;
+                    z-index: 5;
+                }
+
+                .gradient-content {
+                    padding-top: calc(50vh + 20px);
+                }
+
+                main {
+                    padding: 5rem 0;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media (max-width: 767px) {
                     .side-cards {
-                        display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: center;
-                        align-items: center;
+                        visibility: hidden;
                     }
-
-                    .gradient-angle {
-                        margin: -15vw 0 0 -50vw;
-                        width: 100vw;
-                        background-image: linear-gradient(
-                            178deg,
-                            transparent,
-                            transparent 5vw,
-                            #1f2227 calc(5vw + 1px),
-                            #1f2227
-                        );
-                        left: 50%;
-                        z-index: 5;
-                    }
-
                     .gradient-content {
-                        padding-top: calc(50vh + 20px);
                     }
+                }
 
-                    main {
-                        padding: 5rem 0;
-                        flex: 1;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
+                @media (max-width: 575px) {
+                    .gradient-content {
+                        padding-top: 50vh;
                     }
-
-                    
-                    @media (max-width: 767px) {
-                        .side-cards {
-                            visibility: hidden;
-                        }
-                        .gradient-content {
-                        }
-                    }
-
-                    @media (max-width: 575px) {
-                        .gradient-content {
-                            padding-top: 50vh;
-                        }
-                    }
-                `}</style>
+                }
+            `}</style>
         </DefaultLayout>
     );
 }
