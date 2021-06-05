@@ -9,12 +9,13 @@ export default function SectionHeading({
     return (
         <>
             {subHeadAbove && <div>{subHeadAbove}</div>}
-            <h1 className={`heading ${className}`}>{content}</h1>
-            <style jsx>{`
-                .heading {
-                    color: ${light ? '#fff' : 'inherit'};
-                }
-            `}</style>
+            <h1
+                className={`heading ${
+                    light ? 'text-white-high' : 'text-black-high'
+                } ${className}`}
+            >
+                {content}
+            </h1>
         </>
     );
 }

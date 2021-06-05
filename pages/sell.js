@@ -12,7 +12,6 @@ export default function Sell() {
     const [method, setMethod] = useState('fixed');
 
     const changeMethod = e => {
-
         if (e !== method) {
             setMethod(e);
         }

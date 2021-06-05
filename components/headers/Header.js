@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import OutlineButton from './buttons/Outline';
+import OutlineButton from '../buttons/Outline';
 
 export default function Header() {
     const loggedIn = false;
@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light justify-content-between px-md-5 mb-5">
             <div className="text-lg-center nav-logo">
-                <a className="navbar-brand font-weight-bold" href="#">
+                <a className="navbar-brand font-weight-bold" href="/">
                     DeMons
                 </a>
             </div>
