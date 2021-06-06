@@ -10,9 +10,9 @@ export default function DMZ() {
                 <Head>
                     <title>About DMZ</title>
                 </Head>
-                <div className="mx-2 mx-lg-5">
+                <div className="mx-4 mx-lg-5">
                     <div className="row section bg-black">
-                        <div className="col-12 text-right">
+                        <div className="col-12 text-center text-md-right">
                             <Image
                                 className="ml-auto d-block"
                                 src="/images/DMZ-token1.png"
@@ -21,7 +21,7 @@ export default function DMZ() {
                                 alt=""
                             />
                         </div>
-                        <div className="col-12 text-center mt-n5">
+                        <div className="col-12 text-center mt-n3 mt-md-n5">
                             <SectionHeading content="What are DMZ?" light />
                             <span className="f-85">
                                 (Pronounced dee-em-zee)
@@ -43,7 +43,7 @@ export default function DMZ() {
                                 DeMonverse are the holders of DMZ.
                             </div>
                         </div>
-                        <div className="col-12 text-left">
+                        <div className="col-12 text-center text-md-left">
                             <Image
                                 className=""
                                 src="/images/DMZ-token2.png"

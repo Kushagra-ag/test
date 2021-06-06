@@ -12,7 +12,7 @@ export default function Header() {
                 </a>
             </div>
             <button
-                className="navbar-toggler"
+                className="navbar-toggler ml-auto"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -30,7 +30,7 @@ export default function Header() {
                 >
                     <ul className="navbar-nav">
                         <li className="nav-item mx-2">
-                            <Link href="/gallery">
+                            <Link href="#">
                                 <a className="nav-link">The Saga</a>
                             </Link>
                         </li>

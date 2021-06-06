@@ -13,7 +13,7 @@ export default function Home() {
                     <title>DeMons</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
-                <div className="mx-2 mx-lg-5">
+                <div className="mx-4 mx-lg-5">
                     <div className="row">
                         <div className="col-12 text-center">
                             <SectionHeading content="Collect. Earn. Trade" />
@@ -73,6 +73,7 @@ export default function Home() {
                                 <div className="col-md-6 text-md-left pr-md-5">
                                     <SectionHeading
                                         content="Yield rewards for holding."
+                                        className="mt-4 mt-md-0"
                                         light
                                     />
                                     <div className="font-weight-light text-white-medium py-5 pr-md-5">
@@ -127,7 +128,7 @@ export default function Home() {
                                 <br />
                             </div>
                         </div>
-                        <div className="col-md-6 text-right">
+                        <div className="col-md-6 text-md-right">
                             <div className="level-card card-shadow border-20 bg-white d-inline-flex align-items-end p-4 mb-3 mw-100 pe-none">
                                 <div className="text-black-medium text-left mr-4">
                                     Level
@@ -203,7 +204,7 @@ export default function Home() {
                                 ageless digital identity.
                             </div>
                         </div>
-                        <div className="col-md-6 text-right">
+                        <div className="col-md-6 text-md-right">
                             <Image
                                 className=""
                                 src="/images/image1_home_demons.png"
@@ -212,7 +213,7 @@ export default function Home() {
                                 alt="Your Name"
                             />
                             <br />
-                            <div className="level-card card-shadow ml-auto border-20 bg-white py-4 px-1 mb-3 mw-100 pe-none">
+                            <div className="level-card card-shadow mx-auto ml-md-auto mr-md-0 border-20 bg-white py-4 px-1 mb-3 mw-100 pe-none">
                                 <div
                                     className="d-flex"
                                     style={{ transform: 'scale(.9)' }}
@@ -237,7 +238,7 @@ export default function Home() {
                                 light
                             />
                         </div>
-                        <div className="col-md-6 py-5">
+                        <div className="col-md-6 py-5 text-center text-md-left">
                             <div className="font-weight-light text-white-medium pl-md-5">
                                 In the pursuit of making everything conveniently
                                 available at one place for our buyers; we
