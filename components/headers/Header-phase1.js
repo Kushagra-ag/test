@@ -35,7 +35,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li className="nav-item mx-2">
-                            <Link href="#">
+                            <Link href="/dmz-token">
                                 <a className="nav-link">DMZ Token</a>
                             </Link>
                         </li>

@@ -82,6 +82,7 @@ body {
 
 .bg-black {
   position: relative;
+  color: #ffffff99;
 }
 
 .bg-black:before {
@@ -173,4 +174,8 @@ select.custom-select {
 
 .f-85 {
   font-size: 85%;
+}
+
+.pe-none {
+  pointer-events: none;
 }
