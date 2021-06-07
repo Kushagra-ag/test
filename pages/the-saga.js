@@ -107,7 +107,7 @@ export default function Saga() {
                     max-height: 177px;
                 }
                 .card-1 {
-                    background-image: url('/svg/godzilliqa-bg.svg');
+                    background-image: url('/images/godzilliqa-saga-bg.png');
                 }
                 .card-2 {
                     background-image: url('/images/cryptoapes-saga-bg.png');
@@ -117,7 +117,7 @@ export default function Saga() {
                 	color: #ffffff61;
                 }
                 .row-bg {
-                	background: #fff url('/images/godzilliqa-saga-bg.png') no-repeat left top;
+                	background: #fff url('/images/godzilliqa-saga-bg-1.png') no-repeat left top;
                 	background-size: contain;
                 }
             `}</style>

@@ -30,7 +30,7 @@ export default function Header() {
                 >
                     <ul className="navbar-nav">
                         <li className="nav-item mx-2">
-                            <Link href="#">
+                            <Link href="/the-saga">
                                 <a className="nav-link">The Saga</a>
                             </Link>
                         </li>

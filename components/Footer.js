@@ -22,24 +22,29 @@ export default function Footer() {
 
                         <div className="mt-5 d-inline-flex font-weight-lighter">
                                 <div className="mr-3">
-                                    <Image
-                                        className=""
-                                        src="/svg/social/instagram.svg"
-                                        height={17}
-                                        width={16}
-                                        alt=""
-                                    />
-                                    <span className="ml-1 mb-2 align-middle d-inline-block"> Instagram </span>
+                                    <a href="https://instagram.com/decentralised_monsters">
+                                        <Image
+                                            className=""
+                                            src="/svg/social/instagram.svg"
+                                            height={17}
+                                            width={16}
+                                            alt=""
+                                        />
+                                        <span className="ml-1 mb-2 align-middle d-inline-block"> Instagram </span>
+                                    </a>
                                 </div>
                                 <div className="ml-3">
-                                    <Image
-                                        className=""
-                                        src="/svg/social/twitter.svg"
-                                        height={17}
-                                        width={16}
-                                        alt=""
-                                    />
-                                    <span className="ml-1 mb-2 align-middle d-inline-block"> Twitter </span>
+                                    
+                                    <a href="https://twitter.com/de_monsters" aria-label="DeMons Instagram page">    
+                                        <Image
+                                            className=""
+                                            src="/svg/social/twitter.svg"
+                                            height={17}
+                                            width={16}
+                                            alt=""
+                                        />
+                                        <span className="ml-1 mb-2 align-middle d-inline-block"> Twitter </span>
+                                    </a>
                                 </div>
                         </div>
 
@@ -47,10 +52,22 @@ export default function Footer() {
                     <div className="col-md-6 text-center text-md-right mt-5 mt-md-0">
                         <h2>DeMons</h2>
                         <div className="text-white-medium mt-4 font-weight-lighter">
-                            <ul className="list-unstyled">
-                                <li className="mb-3">Home</li>
-                                <li className="mb-3">Saga</li>
-                                <li className="mb-3">DMZ Token</li>
+                            <ul className="list-unstyled text-decoration-none">
+                                <li className="mb-3">
+                                    <Link href="/">
+                                        <a>Home</a>
+                                    </Link>
+                                </li>
+                                <li className="mb-3">
+                                    <Link href="/the-saga">
+                                        <a>Saga</a>
+                                    </Link>
+                                </li>
+                                <li className="mb-3">
+                                    <Link href="/dmz-token">
+                                        <a>DMZ Token</a>
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                         <div className="mt-5 pt-1 font-weight-lighter">

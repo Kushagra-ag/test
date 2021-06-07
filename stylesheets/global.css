@@ -76,6 +76,10 @@ body {
   overscroll-behavior-x: none;
 }
 
+a, a:hover {
+  color: inherit;
+}
+
 .section {
   margin-bottom: 10rem;
 }
