@@ -143,7 +143,7 @@ export default function DMZ() {
                                         />*/}
 
                             <img
-                                src="/svg/tokennetrics.svg"
+                                src="/svg/tokenmetrics.svg"
                                 className="w-100"
                                 alt=""
                             />

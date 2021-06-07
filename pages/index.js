@@ -22,14 +22,16 @@ export default function Home() {
                                 universe spawned from the Zilliqa blockchain.
                             </div>
                             <div className="my-5">
-                                <DarkButton
-                                    content="View Gallery"
-                                    className="mr-2"
-                                />
-                                <OutlineButton
-                                    content="Know more"
-                                    className="ml-2"
-                                />
+                                <div className="input-div d-inline-flex justify-content-between w-75">
+                                    <input
+                                        type="text"
+                                        className="text-black-high"
+                                        placeholder="Enter your email"
+                                    />
+                                    <div>
+                                        <DarkButton content="Stay Updated" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -45,7 +47,7 @@ export default function Home() {
                                     src="/images/image1_home_demons.png"
                                     height={406}
                                     width={302}
-                                    alt="Your Name"
+                                    alt="DeMons"
                                 />
                             </div>
                             <div
@@ -57,7 +59,7 @@ export default function Home() {
                                     src="/images/image2.png"
                                     height={406.56}
                                     width={375}
-                                    alt="Your Name"
+                                    alt=""
                                 />
 
                                 <Image
@@ -65,7 +67,7 @@ export default function Home() {
                                     src="/images/image3.png"
                                     height={406.56}
                                     width={375}
-                                    alt="Your Name"
+                                    alt=""
                                 />
                             </div>
 
@@ -232,7 +234,7 @@ export default function Home() {
                     </div>
 
                     <div className="row section bg-black pt-4">
-                        <div className="col-md-6 text-center py-5">
+                        <div className="col-md-6 text-center text-md-left py-5">
                             <SectionHeading
                                 content="Resell Marketplace"
                                 light
@@ -255,6 +257,7 @@ export default function Home() {
                             <img
                                 src="/svg/homepage-site.svg"
                                 className="w-100 position-absolute"
+                                style={{left:'50%', transform:'translateX(-50%)'}}
                                 alt=""
                             />
                         </div>
@@ -326,7 +329,18 @@ export default function Home() {
                     justify-content: center;
                     align-items: center;
                 }
-
+                input {
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    width: 60%;
+                }
+                .input-div {
+                    border: 1px solid #c4c4c4;
+                    padding: 0 10px 0 20px;
+                    border-radius: 10px;
+                    max-width: 480px;
+                }
                 .card-row {
                     margin-top: -13vw;
                     padding-top: calc(40vh + 20px);

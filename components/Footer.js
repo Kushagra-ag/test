@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import LightButton from './buttons/Light';
 
 export default function Footer() {
@@ -16,19 +17,44 @@ export default function Footer() {
                                 className="text-white-high"
                                 placeholder="Enter your email"
                             />
-                            <div>
-                                <LightButton content="Stay Updated" />
-                            </div>
+                            <LightButton content="Stay Updated" />
                         </div>
+
+                        <div className="mt-5 d-inline-flex font-weight-lighter">
+                                <div className="mr-3">
+                                    <Image
+                                        className=""
+                                        src="/svg/social/instagram.svg"
+                                        height={17}
+                                        width={16}
+                                        alt=""
+                                    />
+                                    <span className="ml-1 mb-2 align-middle d-inline-block"> Instagram </span>
+                                </div>
+                                <div className="ml-3">
+                                    <Image
+                                        className=""
+                                        src="/svg/social/twitter.svg"
+                                        height={17}
+                                        width={16}
+                                        alt=""
+                                    />
+                                    <span className="ml-1 mb-2 align-middle d-inline-block"> Twitter </span>
+                                </div>
+                        </div>
+
                     </div>
                     <div className="col-md-6 text-center text-md-right mt-5 mt-md-0">
                         <h2>DeMons</h2>
-                        <div className="text-white-medium mt-4">
+                        <div className="text-white-medium mt-4 font-weight-lighter">
                             <ul className="list-unstyled">
                                 <li className="mb-3">Home</li>
                                 <li className="mb-3">Saga</li>
                                 <li className="mb-3">DMZ Token</li>
                             </ul>
+                        </div>
+                        <div className="mt-5 pt-1 font-weight-lighter">
+                            &#169; DeMons 2021
                         </div>
                     </div>
                 </div>
