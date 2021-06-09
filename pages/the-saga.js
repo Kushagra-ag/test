@@ -81,7 +81,7 @@ export default function Saga() {
                         </div>
                         <div className="col-md-6 text-md-left mb-5 mb-md-0">
                             
-                            <div className="pl-md-5 pt-4 text-black-medium">
+                            <div className="pl-md-5 pt-4">
                                 Godzilliqa is a country forged out of contradictions- of technology that seems to be evolving at breakneck speed, co-existing with customs that date back centuries. These have been preserved and carefully passed down generation after generation.
                                 <br /><br />
 								It is a country of enormous wealth, and crumbling slums. Of magic-wielding families and bombs that are made to detonate before they ever hit the ground.

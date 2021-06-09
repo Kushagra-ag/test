@@ -6,26 +6,16 @@ export default function Header() {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light justify-content-between px-md-5 mb-5">
-            <div className="text-lg-center nav-logo">
+            <div className="text-lg-center nav-logo mb-auto mt-md-auto">
                 <a className="navbar-brand font-weight-bold" href="/">
                     DeMons
                 </a>
             </div>
-            <button
-                className="navbar-toggler ml-auto"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span className="navbar-toggler-icon"></span>
-            </button>
+            
 
-            <div className="d-flex">
+            {/*<div className="d-flex">*/}
                 <div
-                    className="collapse navbar-collapse align-items-center mr-4"
+                    className="collapse navbar-collapse align-items-center mr-4 ml-auto"
                     id="navbarSupportedContent"
                 >
                     <ul className="navbar-nav">
@@ -94,7 +84,19 @@ export default function Header() {
                         </div>
                     )}
                 </div>
-            </div>
+            {/*</div>*/}
+
+            <button
+                className="navbar-toggler ml-auto mb-auto"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span className="navbar-toggler-icon"></span>
+            </button>
 
             <style jsx>{`
                 .navbar {

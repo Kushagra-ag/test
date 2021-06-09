@@ -16,10 +16,9 @@ export default function Home() {
                 <div className="mx-4 mx-lg-5">
                     <div className="row">
                         <div className="col-12 text-center">
-                            <SectionHeading content="Collect. Earn. Trade" />
+                            <SectionHeading content="Reinventing NFTs." />
                             <div className="m-auto w-75">
-                                DeMons is a decentralised collectible NFT
-                                universe spawned from the Zilliqa blockchain.
+                                Own your DeMon and be a part of a revolutionary digital art and collectable history
                             </div>
                             <div className="my-5">
                                 <div className="input-div d-inline-flex justify-content-between w-75">
@@ -56,7 +55,7 @@ export default function Home() {
                             >
                                 <Image
                                     className="image2 mr-n2"
-                                    src="/images/image2.png"
+                                    src="/images/image2_home_demons.png"
                                     height={406.56}
                                     width={375}
                                     alt=""
@@ -64,7 +63,7 @@ export default function Home() {
 
                                 <Image
                                     className="ml-n2"
-                                    src="/images/image3.png"
+                                    src="/images/image3_home_demons.png"
                                     height={406.56}
                                     width={375}
                                     alt=""
@@ -94,8 +93,9 @@ export default function Home() {
                                         every epoch cycle.
                                     </div>
                                 </div>
-                                <div className="col-md-6 ripple-bg d-flex justify-content-center align-items-center mb-5 mb-md-0">
-                                    <div className="ripple__card border-20 bg-white py-4 px-5 pe-none ">
+                                <div className="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                                    
+                                    <div className="ripple__card border-20 bg-white pe-none py-4 px-5 mt-auto mb-5 mb-md-auto mb-xl-4">
                                         <div className="text-black-medium">
                                             Rewards Earned
                                         </div>
@@ -107,6 +107,15 @@ export default function Home() {
                                             className="w-100"
                                         />
                                     </div>
+                                    
+                                        <Image
+                                            className=""
+                                            src="/images/image4_demons.png"
+                                            height={339}
+                                            width={300}
+                                            alt=""
+                                        />
+                                    
                                 </div>
                             </div>
                         </div>
@@ -156,15 +165,15 @@ export default function Home() {
                         <div className="col-md-6 text-md-left order-1">
                             <Image
                                 className=""
-                                src="/images/image1_home_demons.png"
+                                src="/images/image3_demons.png"
                                 height={300}
                                 width={233.15}
                                 alt="Your Name"
                             />
                             <br />
-                            <div className="level-card card-shadow border-20 bg-white d-inline-flex align-items-end p-4 mb-3 mw-100">
+                            <div className="level-card border-20 bg-transparent d-inline-flex align-items-end mb-3 mw-100">
                                 <Image
-                                    className=""
+                                    className="w-100"
                                     src="/images/home-sample.png"
                                     height={220}
                                     width={376}
@@ -175,7 +184,6 @@ export default function Home() {
                         <div className="col-md-6 text-md-right mb-5 mb-md-0 order-0 order-md-2">
                             <SectionHeading
                                 content="Voting Portal."
-                                className=""
                             />
                             <div className="pl-md-5 pt-4 text-black-medium">
                                 DeMons is a community-driven project. Community
@@ -196,7 +204,6 @@ export default function Home() {
                         <div className="col-md-6 text-md-left pr-md-5 mb-5 mb-md-0">
                             <SectionHeading
                                 content="Name your DeMons"
-                                className=""
                             />
                             <div className="pt-4 text-black-medium">
                                 Your power to name your NFT makes you unfadingly
@@ -209,7 +216,7 @@ export default function Home() {
                         <div className="col-md-6 text-md-right">
                             <Image
                                 className=""
-                                src="/images/image1_home_demons.png"
+                                src="/images/image2_demons.png"
                                 height={300}
                                 width={233.15}
                                 alt="Your Name"
@@ -255,7 +262,7 @@ export default function Home() {
                         </div>
                         <div className="col-12 resell-section">
                             <img
-                                src="/svg/homepage-site.svg"
+                                src="/images/homepage-site.png"
                                 className="w-100 position-absolute"
                                 style={{left:'50%', transform:'translateX(-50%)'}}
                                 alt=""
@@ -369,6 +376,10 @@ export default function Home() {
                 .ripple-bg {
                     background: url('/svg/ripple.svg') no-repeat center center;
                     background-size: contain;
+                }
+
+                .bg-black-img>div {
+                    height: 100%;
                 }
 
                 .level-card {

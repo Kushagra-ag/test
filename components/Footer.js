@@ -22,7 +22,7 @@ export default function Footer() {
 
                         <div className="mt-5 d-inline-flex font-weight-lighter">
                                 <div className="mr-3">
-                                    <a href="https://instagram.com/decentralised_monsters">
+                                    <a href="https://instagram.com/decentralised_monsters" aria-label="DeMons Instagram page">
                                         <Image
                                             className=""
                                             src="/svg/social/instagram.svg"
@@ -35,7 +35,7 @@ export default function Footer() {
                                 </div>
                                 <div className="ml-3">
                                     
-                                    <a href="https://twitter.com/de_monsters" aria-label="DeMons Instagram page">    
+                                    <a href="https://twitter.com/de_monsters" aria-label="DeMons Twitter page">    
                                         <Image
                                             className=""
                                             src="/svg/social/twitter.svg"
