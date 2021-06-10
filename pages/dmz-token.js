@@ -18,7 +18,7 @@ export default function DMZ() {
                                 src="/images/DMZ-token1.png"
                                 height={187}
                                 width={187}
-                                alt=""
+                                alt="Demons"
                             />
                         </div>
                         <div className="col-12 text-center mt-n3 mt-md-n5">
@@ -134,14 +134,6 @@ export default function DMZ() {
                             <SectionHeading content="Token Metrics" />
                         </div>
                         <div className="col-12">
-                            {/*<Image
-                                            className=""
-                                            src="/svg/tokennetrics.svg"
-                                            layout="fill"
-                                            objectFit="contain"
-                                            alt=""
-                                        />*/}
-
                             <img
                                 src="/svg/tokenmetrics.svg"
                                 className="w-100"

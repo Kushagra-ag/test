@@ -17,11 +17,11 @@ export default function Home() {
                     <div className="row">
                         <div className="col-12 text-center">
                             <SectionHeading content="Reinventing NFTs." />
-                            <div className="m-auto w-75">
+                            <div className="m-auto w-md-75">
                                 Own your DeMon and be a part of a revolutionary digital art and collectable history
                             </div>
                             <div className="my-5">
-                                <div className="input-div d-inline-flex justify-content-between w-75">
+                                <div className="input-div d-inline-flex justify-content-between w-md-75">
                                     <input
                                         type="text"
                                         className="text-black-high"
@@ -247,7 +247,7 @@ export default function Home() {
                                 light
                             />
                         </div>
-                        <div className="col-md-6 py-5 text-center text-md-left">
+                        <div className="col-md-6 pb-5 pt-4 pt-md-5 text-center text-md-left">
                             <div className="font-weight-light text-white-medium pl-md-5">
                                 In the pursuit of making everything conveniently
                                 available at one place for our buyers; we

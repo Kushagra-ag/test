@@ -24,7 +24,7 @@ export default function Sell() {
                     <title>Sell NFT</title>
                 </Head>
                 <div className="row">
-                    <div className="col-md-6 flex-fill text-center text-md-left">
+                    <div className="col-md-6 flex-fill text-center text-md-left order-2 order-md-0">
                         <SectionHeading content="Sell your Demon" />
                         <div className="font-weight-bolder mt-4 mb-3">
                             Choose your method of selling
@@ -72,8 +72,9 @@ export default function Sell() {
                             {method === 'timed' && <Timed />}
                         </div>
                     </div>
-                    <div className="col-md-6 flex-fill text-center">
+                    <div className="col-md-6 flex-fill text-center order-1 mb-5">
                         <Image
+                            // NFT image URL
                             src="/images/image1_home_demons.png"
                             height={403.2}
                             width={300}

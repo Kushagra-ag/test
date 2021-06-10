@@ -24,10 +24,10 @@ export default function FixedPrice() {
                 </div>
             </div>
             <div className="text-black-medium f-85 mb-5">
-                Service fee{' '}
+                Service fee
                 <span className="text-black-high font-weight-bolder">10%</span>
                 <br />
-                You will recieve{' '}
+                You will recieve
                 <span className="text-black-high font-weight-bolder">
                     100 DMZ ($1000)
                 </span>

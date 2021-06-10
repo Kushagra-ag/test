@@ -28,3 +28,12 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+#irrelevant pages
+/pages/gallery.js
+/pages/owned.js
+/pages/details.js
+/components/sections/details.js
+/components/sections/history.js
+/components/sections/story.js
+/components/Tabs.js
